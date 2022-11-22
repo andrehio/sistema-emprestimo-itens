@@ -1,0 +1,136 @@
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+}
+h1{
+    font-size: 18px;
+}
+
+/*grid padrão de 960px*/
+.linha{
+    width: 960px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 5px 0;
+}
+
+/*layout do site*/
+/*Pagina inicial - Index*/
+.wrap{
+    flex: 1 0 auto;
+}
+a:link, header a:visited{
+    color:#315e8a;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.login{
+    display: block;
+    background: rgb(173, 173, 173);
+    border: 1px #b90504 solid;
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+.login div{
+    padding: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.login div label{
+    width: 30%;
+    float: left;    
+    text-align: right;
+    padding-right: 2px;
+}
+.login div h2{
+    margin: auto;
+    font-size: 13px;
+}
+.login div input{
+    border-radius: 5px;
+}
+.login div input[type=email], form div input[type=password]{
+    width: 50%;
+    height: 20px;
+}
+div input[type=submit]{
+    background-color: #b90504;
+    color: #ffffff;
+    cursor: pointer;
+    border: 0;
+    display: block;
+}
+.login div input[type=submit]{
+    padding: 5px 10px;
+    margin: auto;
+}
+.login div input:hover[type=submit], .botao input[type=submit]:hover{
+    background: #dc3545;
+}
+
+/*Demais páginas*/
+.header{
+    background-color: #dee3e6;
+}
+header nav ul{
+    list-style: none;
+    padding-left: 0;
+}
+header nav ul li{
+    display: inline-block;
+    width: 90px;
+    margin-right: 10px;
+    padding: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.514);
+    text-align: center;
+}
+header nav ul li.active{
+    background-color: #03690b;
+    border: 1px solid rgba(128, 128, 128, 0.514);
+}
+header nav ul li.active a{
+    color: #ebebeb;
+}
+.novo_cadastro{
+    width: 660px;
+    padding: 10px;
+}
+.novo_cadastro label{
+    margin-top: 10px;
+    display: block;
+}
+.novo_cadastro div{
+    display: block;
+}
+.radio{
+    display: inline-block;
+    width: fit-content;
+}
+.novo_cadastro input{
+    width: 50%;
+}
+.botao input[type=submit]{
+    margin: 10px 0;
+    width: 100px;
+    height: 30px;
+}
+.footer{
+    flex-shrink: 0;
+    background-color: #b90504;
+    color: #ebebeb;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 300;
+}
+
